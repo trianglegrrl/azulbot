@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @contact.phone %>
+</p>
+
+<p>
+  <strong>Relationship state:</strong>
+  <%= @contact.relationship_state %>
+</p>
+
+<p>
+  <strong>Conversation state:</strong>
+  <%= @contact.conversation_state %>
+</p>
+
+<%= link_to 'Edit', edit_contact_path(@contact) %> |
+<%= link_to 'Back', contacts_path %>
